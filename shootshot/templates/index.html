@@ -1,11 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <title>ShootShot</title>
+    <title>Live Filter Toggles</title>
 </head>
 <body>
-  <h1>SnapFilter Python</h1>
-  <img src="{{ url_for('video_feed') }}" width="640" height="480" />
+    <h2>Live Camera Filter</h2>
+
+    <label>
+      <input type="checkbox" id="glassesToggle" onchange="updateFilter()">
+      Glasses
+    </label>
+    <label>
+      <input type="checkbox" id="moustacheToggle" onchange="updateFilter()">
+      Moustache
+    </label>
+
+    <br><br>
+    <img id="video" src="{{ url_for('video_feed') }}?glasses=0&moustache=0" style="max-width: 100%;">
+
+    <script>
+        function updateFilter() {
+            const glassesOn = document.getElementById('glassesToggle').checked ? 1 : 0;
+            const moustacheOn = document.getElementById('moustacheToggle').checked ? 1 : 0;
+
+            const video = document.getElementById('video');
+            video.src = `/video_feed?glasses=${glassesOn}&moustache=${moustacheOn}&_=${new Date().getTime()}`;
+        }
+    </script>
 </body>
 </html>
