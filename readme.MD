@@ -1,6 +1,6 @@
 # ShootShot
+![img_1.png](img_1.png)
 
-![Project Screenshot Placeholder](d![img.png](img.png)ocs/screenshot_placeholder.png)
 *(Replace this with a screenshot or GIF of your application in action! See "Adding Images" below.)*
 
 ## Overview
