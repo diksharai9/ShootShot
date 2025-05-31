@@ -289,4 +289,6 @@ def video_feed():
 
 if __name__ == '__main__':
     release_camera_on_exit()  # Ensure camera is released on app exit
-    app.run(debug=True)  # Run in debug mode for easier development
+    import os
+    port = int(os.environ.get("PORT", 5000))  # Get port from environment variable, default to 5000
+    app.run(host='0.0.0.0', port=port, debug=True)
