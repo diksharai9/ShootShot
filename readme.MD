@@ -1,11 +1,9 @@
 # ShootShot
 ![img_1.png](img_1.png)
 
-*(Replace this with a screenshot or GIF of your application in action! See "Adding Images" below.)*
-
 ## Overview
 
-Aesthetic Autotune Cam Studio is a fun, real-time webcam application that transforms your live video and audio feed with a variety of visual filters and an autotune-like vocal effect. Built with Flask for backend video processing and a modern JavaScript frontend, it offers a creative way to capture unique moments.
+ShootShot Studio is a fun, real-time webcam application that transforms your live video and audio feed with a variety of visual filters and an autotune-like vocal effect. Built with Flask for backend video processing and a modern JavaScript frontend, it offers a creative way to capture unique moments.
 
 The application combines server-side OpenCV processing for face-based filters and global color adjustments, with client-side Canvas effects for aesthetic touches. It also includes real-time audio processing to give your voice an autotuned feel, all while allowing you to record your enhanced performance.
 
